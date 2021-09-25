@@ -104,6 +104,15 @@ body .accent-text {
 }
 
 /*----------- HEADER ---------*/
+.header {
+  border: 1px solid #ececec;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
 
 .header-logo {
   padding-top: 24px;
@@ -111,6 +120,19 @@ body .accent-text {
   margin-right: 93px;
 
   color: #000000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link {
@@ -130,28 +152,6 @@ body .accent-text {
   color: var(--accent-color);
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-}
-
-.header-content {
-  display: flex;
-  align-items: center;
-}
-
-.header-nav-list {
-  display: flex;
-}
-
-.header-nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-contacts-link {
-  color: inherit;
-}
-
 .header-contacts-list {
   display: flex;
   margin-left: auto;
@@ -159,6 +159,9 @@ body .accent-text {
 
 .header-contacts-item:not(:last-child) {
   margin-right: 50px;
+}
+.header-contacts-link {
+  color: inherit;
 }
 
 /*----------- HERO ---------*/
@@ -331,7 +334,6 @@ body .accent-text {
   flex-basis: calc(100% / 3 - var(--primary-gap));
   margin-left: var(--primary-gap);
   margin-top: var(--primary-gap);
-  border: 1px solid #eeeeee;
 }
 
 .works-list-descr {
@@ -339,6 +341,9 @@ body .accent-text {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .works-list-title {
